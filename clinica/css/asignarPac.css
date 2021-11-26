@@ -1,0 +1,230 @@
+body{
+    background:linear-gradient(20deg, white, rgb(67, 67, 117));
+    background-repeat: no-repeat;
+    background-repeat: none;
+    width: 100%;
+    height:100%;
+    overflow-x:hidden;
+    padding:0.5cm;
+}
+li{
+    list-style: none;
+    margin:10px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+form>li{
+    display:grid;
+}
+
+
+/*   TODOS HTML   ////////////////////////////////////////////////////////////*/
+
+
+/* icono flecha */
+
+.icono-arrow{
+    position:relative;
+    margin-left: 20px;
+    top: 1cm;
+    text-decoration:none;
+    color:white;
+}
+.icono-arrow>i{
+    font-size:59px;
+    color:white;
+    transition: all 1s;
+}
+
+.icono-arrow>i:hover{
+    transform: scale(1.2);
+}
+
+/* titulo */
+
+.titulo{
+    font-size:calc(1vw + 39px);
+    margin-top:0.5cm;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 12px black;   
+    border:1px solid white;
+    background:rgb(62, 67, 119);
+    padding:5px;
+    border-radius:15px;
+}
+.titulo-medio{
+    font-size:calc(1vw + 16px);
+    margin-top:0.5cm;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 12px black;
+    margin-top:1cm;
+}
+
+/* FORMS */
+.form-split{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-split>li>input{
+    padding:2px;
+}
+.form-split>li>label{
+    margin-right:5px;
+}
+/* TABLAS */
+.tabla-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla{
+    margin:auto;
+    width:13cm;
+    border-radius:10px;
+    border-collapse:separate;
+    border-radius: 15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border:2px solid rgb(109, 93, 1);
+    background: gold;
+}
+.cabeza-tabla{
+    background:rgb(202, 172, 3);
+    color:white;
+    font-size:calc(1vw + 15px);
+    text-align:center;
+}
+.tabla>thead{
+    background:gold;
+    text-align:center;
+}
+.tabla>tbody>tr{
+    background:rgb(253, 237, 144);
+    text-align:center;
+}
+
+/*/////////////////// historialDoc1.html */
+
+/* texto superior al lado de flecha */
+
+.top-text{
+    font-size: calc(1vw + 20px);
+    margin-top:1cm;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* icono flecha volver atras */
+
+.icono-arrow{
+    top: 0.3cm;
+    text-decoration: none;
+    color:white;
+    padding:0px 15px;
+}
+.icono-arrow>i{
+    color:white;
+    transition:all 1s;
+    font-size:60px;
+}
+.icono-arrow>i:hover{
+    transform: scale(1.5);
+}
+
+/* icono plus agregar*/
+
+.icono-plus{
+    font-size: 20px;
+    text-decoration:none;
+    color:white;
+    padding:7px 15px;
+    border-radius: 35px;
+    border:2px solid white;
+    background: rgb(9, 192, 238);
+    margin-left:1cm;
+    transition:all 0.5s;
+}
+.icono-plus:hover{
+    color:white;
+    padding:7px 25px;
+    margin-bottom:2cm;
+}
+.icono-plus>i{
+    color:red;
+}
+
+/* table */
+
+#myTable{
+    margin-top:1cm;
+}
+
+
+/*   asignarPaciente.html    ///////////////////////////////////////////////*/
+
+.asignar-titulo-container{
+    width:100%;
+    height:2cm;    
+}
+
+.asignar-titulo-container>div{
+    width: 50%;
+    height: 100%;
+    margin:auto;
+    display: table;
+}
+
+.asignar-titulo-container>div>h1{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*   lista-turnos.html     /////////////////////////////////////////////////////////////*/
+
+.table-container{
+    width:100%;
+}
+
+.table-container>ul{
+    width: 100%;
+}
+.myTable{
+    width:50%;
+}
+@media all and (max-width:700px){
+    .form-split{
+        flex-direction: column;
+    }
+}
+@media all and (max-width:600px){
+    .top-text{
+        font-size: calc(1vw + 10px);
+    }
+    .icono-arrow>i{
+        font-size:50px;
+    }
+    .tabla{
+        width:100%;
+    }
+}
+@media all and (max-width:400px){
+    .titulo{
+        font-size:calc(1vw + 29px);
+    }
+    .icono-arrow{
+        left:-1cm;
+    }
+    .icono-arrow>i{
+        font-size:40px;
+    }
+}
+
+

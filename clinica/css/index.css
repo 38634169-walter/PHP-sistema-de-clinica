@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(20deg, white, rgb(67, 67, 117));
+    background-repeat: no-repeat;
+    background-repeat: none;
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+li{
+    list-style: none;
+}
+.index-container{
+    margin:0px -0.5cm;
+    margin-top:2.5cm;
+    border-bottom:2px solid white;
+    border-top:2px solid white;
+    background: linear-gradient(20deg, rgb(67, 67, 117),white);
+    box-shadow: 15px 10px 15px black;
+    padding:1cm 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-container>h1{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*NOMBRE*/
+
+#titulo-clinica{
+    width:70%;
+    margin:auto;
+    height: 1cm;
+    color:rgb(37, 163, 121);
+    border:1px solid white;
+    box-shadow: 15px 10px 15px black;
+    border-radius: 45px;
+    padding-left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-clinica>h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom:0;
+}
+
+/*ICONOS*/
+
+.icons{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1cm;
+}
+
+.icons>i{
+    color:rgb(9, 238, 161);
+    font-size: 55px;
+    margin:0px 1cm;
+}
+
+/*BOTON*/
+
+.index-container>a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    margin-top:1cm;
+}
+.index-container>a:hover{
+    text-shadow: 2px 2px 12px white;
+}
+
+/*      QUERY 400px       ////////////////////////////////////////////////////////////////*/
+
+@media all and (max-width:400px){
+    .index-container>h1{
+        font-size:calc(1vw + 22px);
+    }
+    /*NOMBRE*/
+    #titulo-clinica>h1{
+        font-size: calc(1vw + 15px);
+    }
+    /*ICONOS*/
+    .icons>i{
+        font-size: 35px;
+        margin:0px 0.5cm;
+    }
+    .index-container>a{
+        font-size:calc(1vw + 15px);
+    }
+}

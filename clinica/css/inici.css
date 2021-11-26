@@ -1,0 +1,212 @@
+
+/*    inicio.html    ///////////////////////////////////////////////////////////*/
+
+
+.body-container{
+    display:flex;
+}
+
+/*   menu principal   ////////////////////////////////////////////////*/
+
+.menu-container{
+    width:35%;
+    height:100vh;
+    padding:2cm 0px;
+    margin:-0.5cm;
+    background: indigo;
+}
+
+/* icono usuario */
+
+.menu-container>h1{
+    font-size:calc(1vw + 30px);
+    font-family: 'Redressed', cursive;
+    color:white;
+    margin-left:-5px;
+    text-align:center;
+}
+.menu-container>h1>i{
+    padding-right:10px;
+    color:aquamarine;
+}
+
+/* accesos */
+.menu-container>ul{
+    margin-top:1cm;
+}
+.menu-container>ul>li{
+    border-bottom: 1px solid rgb(1, 204, 255);
+}
+.menu-container>ul>li>i{
+    margin-right:15px;
+    color:aquamarine;
+}
+.menu-container>ul>li>a{
+    font-size:calc(1vw + 12px);
+    color:white;
+    text-decoration: none;
+}
+
+/*   costado derecho   ///////////////////////////////////////////*/
+
+.right-side{
+    width:65%;
+    height:100vh;
+}
+
+/* titulo usuario */
+
+.right-side>div{
+    position:relative;
+    margin-top:2cm;
+    padding-left:2cm;
+}
+.right-side>div>p{
+    font-size:calc(1vw + 20px);
+}
+.right-side>div>p>strong{
+    font-size: calc(1vw + 40px);
+    font-family: 'Redressed', cursive;
+}
+
+
+/* debajo */
+.cuerpo-logo{
+    margin-top:1.5cm;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.cuerpo-logo>h1{
+    font-size: calc(1vw + 50px);
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+    text-shadow: 10px 5px 10px black;
+}
+
+/* iconos */
+.cuerpo-logo>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo-logo>div>i{
+    font-size:calc(1vw + 35px);
+    margin:20px;
+    color:aquamarine;
+}
+
+/*   menu responsive   ////////////////////////////*/
+
+.menu-responsive-container{
+    display:none;
+}
+
+@media screen and (max-width:800px){
+
+    .menu-container{
+        margin:0;
+    }
+
+    /*   costado derecho   ///////////////////////////////*/
+    
+    .right-side{
+        width:100%;
+    }
+    .right-side>div{
+        padding-left:0.5cm;
+    }
+    
+    /*   menu principal   ////////////////////////////////////////////////*/
+
+    .menu-container{
+        width:80%;
+        position:absolute;
+        top:1.5cm;
+        height:calc(100vh - 1.5cm);
+        overflow-y: scroll;
+        left:-100%;
+        z-index:1000;
+    }
+    
+    /* accesos */
+
+    .menu-container>ul{
+        padding-left:20px;
+    }
+
+    /*   MENU RESPONSIVE   //////////////////////////////////////////////*/
+
+    .menu-responsive-container{
+        margin-left:-0.5cm;
+        display:flex;
+        justify-content: space-between;
+        top:0;
+        width:100%;
+        position:fixed;
+        background: blueviolet;
+        height:1.5cm;
+    }
+
+    .menu-responsive-container>h1{
+        font-size: 40px;
+        padding-left:20px;
+        color:white;
+        padding-top:5px;
+    }
+
+    /* iconos */
+
+    .x-icono , .icono-menu{
+        font-size:45px;
+        position:absolute;
+        right:20px;
+        margin-top:6px;
+        color:white;
+        display:none;
+        cursor:pointer;
+    }
+    .icono-menu{
+        display:block;
+    }
+
+    /* clases para agregar */
+    
+    .show{
+        display:block;
+    }
+    .remove{
+        display:none;
+    }   
+
+}
+
+
+@media screen and (max-width:400px){
+
+    /* titulo usuario */
+
+    .right-side>div>p{
+        font-size:calc(1vw + 15px);
+    }
+    .right-side>div>p>strong{
+        font-size: calc(1vw + 25px);
+    }
+
+    /* debajo */
+
+    .cuerpo-logo>h1{
+        padding-left: 0;
+        font-size: calc(1vw + 25px);
+    }
+    /* iconos */
+
+    .cuerpo-logo>div>i{
+        font-size:calc(1vw + 30px);
+    }
+}
