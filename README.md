@@ -5,7 +5,7 @@ Este es un proyecto viejo que empecé hace un años con PHP (el cual no esta sep
 
 -Utilizar un sistema de roles y permiso directo de la base de datos (el cual ya implemente en un proyecto de turnos en ASP.NET).
 
--O podria haber separado los permisos de cada rol en diferentes layout para que cada rol tenga permisos especificos sobre su layout, el cual no utilizaria por que no es un sistema muy eficiente, lo mas adecuado seria lo anterior generar los permisos desde la base de datos con un sistema de roles y permisos como el que implemente en un proyecto ASP.NET, el cual tambien se encuentra en mi repositorio).
+-O podria haber separado los permisos de cada rol en diferentes layout para que cada rol tenga permisos especificos sobre su layout, el cual no utilizaria por que no es un sistema muy eficiente, lo mas adecuado seria lo anterior generar los permisos desde la base de datos con un sistema de roles y permisos para poder asignar nuevos permisos y/o mismos permisos a diferentes roles segun la necesidad, esto mismo ya lo implemente en un proyecto ASP.NET, el cual se encuentra en mi repositorio https://github.com/Walter-Damian-Diaz/UTN--ASP.NET--proyecto_final-Web_sistema_turnos_clinica).
 Completamente abierto a preguntas tecnicas al respecto de este proyecto.
 
-Saludos.
+-Este proyecto tambien lo implemente en LARAVEL con un sistema de permiso a traves de rutas con middleware que LARAVEL ofrece, se encuentra hospedado en un host completamente funcional en mi subdominio el cual se puede probar desde ahi www.clinica.walter.diaz.com.ar
