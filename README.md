@@ -1,5 +1,5 @@
 # PHP-sistema-de-clinica
-Este es un proyecto viejo que empecé hace un años con PHP (el cual no esta separado en capaz), al cual no le di mas mantencion debido a que seguido de esto y de programar una tienda con PHP (la cual tampoco estaba separada en capaz), pase directamente a LARAVEL donde utilice este mismo proyecto con esta misma interfaz para realizando el sistema de permisos separado por rutas que eran validadas por middleware en LARAVEL, los cuales mas adelante al ganar mas experiencia me di cuenta que:
+Este es un proyecto viejo que empecé hace un años con PHP (el cual no esta separado en capaz), al cual no le di mas mantencion debido a que seguido de esto y de programar una tienda con PHP (la cual tampoco estaba separada en capaz), pase directamente a LARAVEL donde utilice este mismo proyecto con esta misma interfaz pero realizando el sistema de permisos separado por rutas que eran validadas por middleware en LARAVEL, los cuales mas adelante al ganar mas experiencia me di cuenta que:
 
 -Podria haber separado en capaz el proyecto.
 
